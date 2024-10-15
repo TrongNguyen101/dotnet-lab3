@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObject", "BusinessObject\BusinessObject.csproj", "{1D6F1697-48EB-4B4E-AD2B-44511FE637FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{592127DD-23C5-485E-AD92-BD65D3B19571}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{1D6F1697-48EB-4B4E-AD2B-44511FE637FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D6F1697-48EB-4B4E-AD2B-44511FE637FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D6F1697-48EB-4B4E-AD2B-44511FE637FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{592127DD-23C5-485E-AD92-BD65D3B19571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{592127DD-23C5-485E-AD92-BD65D3B19571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{592127DD-23C5-485E-AD92-BD65D3B19571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{592127DD-23C5-485E-AD92-BD65D3B19571}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
