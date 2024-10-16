@@ -30,11 +30,10 @@ namespace Repositories.ProductsRepo
             };
         }
 
-        public Task AddProduct(ProductsDTO productDTO)
+        public Task AddProduct(ProductUpdateDTO productDTO)
         {
             Products product = new Products
             {
-                ProductId = productDTO.ProductId,
                 ProductName = productDTO.ProductName,
                 UnitsInStock = productDTO.UnitsInStock,
                 UnitPrice = productDTO.UnitPrice,

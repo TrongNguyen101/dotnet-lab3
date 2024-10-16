@@ -6,7 +6,7 @@ namespace Repositories.ProductsRepo
     {
         Task<List<ProductsDTO>> GetAllProducts();
         Task<ProductsDTO> GetProduct(int id);
-        Task AddProduct(ProductsDTO productsDTO);
+        Task AddProduct(ProductUpdateDTO productsDTO);
         Task UpdateProduct(int id, ProductUpdateDTO productsDTO);
         Task<Boolean> DeleteProduct(int id);
     }

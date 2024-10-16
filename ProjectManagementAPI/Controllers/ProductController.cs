@@ -31,7 +31,7 @@ namespace ProjectManagementAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateProduct(ProductsDTO product)
+        public async Task<IActionResult> CreateProduct(ProductUpdateDTO product)
         {
             await productsRepository.AddProduct(product);
             return Created();
@@ -46,7 +46,7 @@ namespace ProjectManagementAPI.Controllers
                 await productsRepository.UpdateProduct(id, product);
                 return NoContent();
             }
-            return NotFound("Customer is not exist");
+            return NotFound("Product is not exist");
         }
 
                 [HttpDelete("{id}")]
@@ -55,9 +55,9 @@ namespace ProjectManagementAPI.Controllers
             Boolean isDelete = await productsRepository.DeleteProduct(id);
             if (isDelete == true)
             {
-                return Ok("Delete customer successfully");
+                return Ok("Delete product successfully");
             }
-            return NotFound("Customer is not exist");
+            return NotFound("Product is not exist");
         }
     }
 }
