@@ -49,7 +49,7 @@ namespace ProjectManagementAPI.Controllers
             return NotFound("Product is not exist");
         }
 
-                [HttpDelete("{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
             Boolean isDelete = await productsRepository.DeleteProduct(id);
